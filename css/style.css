@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(146, 146, 146);
+}
+.col-3{
+    border: 1px solid orange;
+}
+.col-4{
+    border: 1px solid orange;
+}
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+  }
+p::first-letter {
+    color: #0051ff;
+    font-variant: cursive;
+    font-family: serif;
+    font-size: 2rem;
+  }
+p.item::first-letter {
+    color: #09ff00;
+
+    font-family: serif;
+    font-size: 2rem;
+  }
+.item{
+    color: blue;
+}
+.titulo{
+    color: blueviolet;
+}
+h1.titulo::first-letter{
+    color: chocolate;
+    font-family: serif;
+}
+h6::after{
+    content: "---interesante";
+}
+h5.item2::before{
+    content: "ATECION---";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+::selection {
+    color: rgb(0, 255, 55);
+    background: rgb(89, 0, 255);
+  }
+div.background {
+    background: red;
+
+    height: 100px;
+    width: 200px;
+  }
+  
+div.transbox {
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    margin: 30px;
+    font-weight: bold;
+  }
+ul li::marker {
+    color: rgb(0, 81, 255);
+    font-size: 18px;
+  }
